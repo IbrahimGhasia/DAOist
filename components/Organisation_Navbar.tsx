@@ -1,8 +1,14 @@
+/* eslint-disable @next/next/no-img-element */
+import { ConnectButton } from "@rainbow-me/rainbowkit";
+import makeBlockie from "ethereum-blockies-base64";
+import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { useAccount } from "wagmi";
 
 const Organisation_Navbar = () => {
 	const [navbar, setNavbar] = useState(false);
+	const { address } = useAccount();
 
 	return (
 		<div>
@@ -66,7 +72,7 @@ const Organisation_Navbar = () => {
 								navbar ? "block" : "hidden"
 							}`}
 						>
-							<ul className="items-center justify-center space-y-6 md:flex md:space-x-12 md:space-y-0">
+							<ul className="items-center justify-center space-y-6 md:flex md:space-x-6 md:space-y-0">
 								<li>
 									<Link
 										href="/organisation_dashboard"
@@ -96,10 +102,26 @@ const Organisation_Navbar = () => {
 									</Link>
 								</li>
 								<li>
-									{/* <ConnectButton
+									<ConnectButton
 										showBalance={false}
 										chainStatus={"icon"}
-									/> */}
+									/>
+								</li>
+								<li>
+									<Link href="/profile" legacyBehavior>
+										<a onClick={() => setNavbar(!navbar)}>
+											<div className="rounded-2xl">
+												<img
+													src={makeBlockie(
+														address ||
+															"0x00000000000000"
+													)}
+													alt="blockie"
+													className="h-12 rounded-full cursor-pointer"
+												/>
+											</div>
+										</a>
+									</Link>
 								</li>
 							</ul>
 						</div>

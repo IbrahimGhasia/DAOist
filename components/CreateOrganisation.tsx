@@ -1,10 +1,29 @@
-import React, { useState } from "react";
+import { useState } from "react";
+
+import { Polybase } from "@polybase/client";
+import { useAccount } from "wagmi";
 
 const CreateOrganisation = () => {
+	const { address } = useAccount();
+
 	const [count, setCount] = useState(1);
 	const [orgName, setOrgName] = useState("");
 	const [tokenName, setTokenName] = useState("");
 	const [tokenSymbol, setTokenSymbol] = useState("");
+
+	const db = new Polybase({ defaultNamespace: "DAOist" });
+	const collectionReference = db.collection("Organization");
+
+	async function createRecord() {
+		if (!address) return null;
+		const recordData = await collectionReference.create([
+			address,
+			orgName,
+			tokenName,
+			tokenSymbol,
+		]);
+		console.log(recordData);
+	}
 
 	return (
 		<>
@@ -108,7 +127,7 @@ const CreateOrganisation = () => {
 								</li>
 							</ul>
 							<div className="flex justify-between">
-								<button>
+								<button onClick={createRecord}>
 									<div className="relative mt-10 inline-flex items-center px-12 py-3 overflow-hidden text-2xl font-medium text-pink-500 border-2 border-pink-500 rounded-full hover:text-white group hover:bg-gray-50 cursor-pointer">
 										<span className="absolute left-0 block w-full h-0 transition-all bg-pink-500 opacity-100 group-hover:h-full top-1/2 group-hover:top-0 duration-400 ease"></span>
 										<span className="absolute right-0 flex items-center justify-start w-10 h-10 duration-300 transform translate-x-full group-hover:translate-x-0 ease">
