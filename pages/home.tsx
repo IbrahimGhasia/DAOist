@@ -22,8 +22,11 @@ export default function Home() {
 						</h5>
 
 						<p className="mb-3 text-lg font-normal text-white">
-							Connect with your doctors and manage your health
-							with ease. Get started with d-Clinic today.
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Quaerat, nobis? Beatae eum, illum pariatur
+							voluptas, enim nulla soluta debitis animi quibusdam
+							molestias tempora magnam eius quos, sunt quo
+							adipisci nobis.
 						</p>
 					</div>
 				</Link>
@@ -41,8 +44,11 @@ export default function Home() {
 						</h5>
 
 						<p className="mb-3 text-lg font-normal text-white">
-							Connect with your doctors and manage your health
-							with ease. Get started with d-Clinic today.
+							Lorem ipsum dolor sit amet consectetur adipisicing
+							elit. Quibusdam reprehenderit, ab minima animi iusto
+							nulla perspiciatis voluptates consectetur dolorem
+							minus? Cum ducimus atque distinctio aliquam porro
+							consectetur, libero vitae quia.
 						</p>
 					</div>
 				</Link>

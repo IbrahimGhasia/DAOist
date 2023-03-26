@@ -11,6 +11,7 @@ import { publicProvider } from "wagmi/providers/public";
 
 import { PolybaseProvider } from "@polybase/react";
 import { Polybase } from "@polybase/client";
+import { ToastContainer } from "react-toastify";
 
 const polybase = new Polybase();
 

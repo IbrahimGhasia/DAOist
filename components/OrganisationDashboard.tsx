@@ -8,6 +8,7 @@ import {
 } from "@tabler/icons-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { toast, ToastContainer } from "react-toastify";
 import { useAccount } from "wagmi";
 
 const db = new Polybase({ defaultNamespace: "DAOist" });
@@ -16,7 +17,8 @@ const organisationCollection = db.collection("Organization");
 const memberCollection = db.collection("Members");
 
 const OrganisationDashboard = () => {
-	const { address } = useAccount();
+	const { address, isConnected } = useAccount();
+
 	const [orgDetails, setOrgDetails] = useState({
 		name: "",
 		tokenName: "",
