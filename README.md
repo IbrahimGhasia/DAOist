@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# DAOist
 
-## Getting Started
+---
 
-First, run the development server:
+Authors
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
+-   <a href="https://github.com/IbrahimGhasia">Ibrahim Ghasia</a>
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Description
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+-   DAOist is here to revolutionize the way you run your
+    business! Using our decentralized autonomous organization
+    platform, you can make sure that all decisions of your
+    organization are taken with the consent of all its
+    stakeholders. DAOist is here to revolutionize the way you
+    invest in other organisations.
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+-   With our decentralised,
+    autonomous platform, you can easily invest in any
+    organization of your choice with total transparency and
+    fairness. Our decentralized voting system will ensure that
+    everyone&apos;s voice is heard and all investors are able to
+    understand how their money is being managed. Invest in a
+    secure and transparent way with DAOist!
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+### Note: The project is not completed fully due to time constraints of the hackathon. Will add many features in future.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+<br />
 
-## Learn More
+# Technologies Used
 
-To learn more about Next.js, take a look at the following resources:
+## Polybase
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+-   Polybase is used as the primary data storage for DAOist. Organisation details and Users details are stored using Polybase.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+    -   The code snippets that are using Polybase are located here
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+    -   <a href="https://github.com/IbrahimGhasia/DAOist/blob/27d613e623979325926d2780ec62f53b7c9e808e/lib/polybase.ts#L7-L40">Polybase</a>
