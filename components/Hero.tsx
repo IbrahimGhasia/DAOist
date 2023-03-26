@@ -11,14 +11,18 @@ const Hero = () => {
 					Decentralized Autonomous Organisation
 				</h1>
 				<p className="text-white text-2xl mt-4 text-justify">
-					Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-					Aliquam sit, quia qui suscipit asperiores doloribus nihil
-					beatae dicta totam error cumque dignissimos et eum ad illum
-					ea minus quidem sequi. Tenetur animi reprehenderit cum iste
-					ad quis modi dolores autem. Atque, labore ab dolores
-					incidunt tenetur nam laudantium, explicabo ducimus animi
-					distinctio nostrum tempore quos? Et, cum sequi! Beatae,
-					provident.
+					DAOist is here to revolutionize the way you run your
+					business! Using our decentralized autonomous organization
+					platform, you can make sure that all decisions of your
+					organization are taken with the consent of all its
+					stakeholders. DAOist is here to revolutionize the way you
+					invest in other organisations. With our decentralised,
+					autonomous platform, you can easily invest in any
+					organization of your choice with total transparency and
+					fairness. Our decentralized voting system will ensure that
+					everyone&apos;s voice is heard and all investors are able to
+					understand how their money is being managed. Invest in a
+					secure and transparent way with DAOist!
 				</p>
 				<div className="flex justify-center mt-8">
 					<Link href="/home" legacyBehavior>
